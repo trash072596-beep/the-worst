@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/the-worst-core",
+    "crates/the-worst-app",
+]
+
+[workspace.dependencies]
+egui          = "0.31"
+eframe        = { version = "0.31", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }
+portable-pty  = "0.8"
+vte           = "0.13"
+crossbeam-channel = "0.5"
+parking_lot       = "0.12"
+unicode-width = "0.1"
+log           = "0.4"
+env_logger    = "0.11"

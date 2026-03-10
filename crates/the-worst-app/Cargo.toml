@@ -1,0 +1,18 @@
+[package]
+name    = "the-worst-app"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "The_Worst"
+path = "src/main.rs"
+
+[dependencies]
+the-worst-core    = { path = "../the-worst-core" }
+egui              = { workspace = true }
+eframe            = { workspace = true }
+crossbeam-channel = { workspace = true }
+parking_lot       = { workspace = true }
+log               = { workspace = true }
+env_logger        = { workspace = true }
+arboard           = { version = "3", default-features = false, features = ["wayland-data-control"] }
